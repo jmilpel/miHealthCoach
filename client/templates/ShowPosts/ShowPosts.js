@@ -1,5 +1,5 @@
 Template.ShowPosts.helpers({
-	posts: function(){
+	posts: function () {
 		return Posts.find();
 	}
 });

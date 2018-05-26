@@ -14,7 +14,7 @@
       <div class="collapse navbar-collapse" id="navbar-content">
         <ul class="nav navbar-nav">
           <li class="active"><a href="/"> Home </a></li>
-          <li class="dropdown nav-item">
+          <!--<li class="dropdown nav-item">
             <a class="dropdown-toggle" data-toggle="dropdown" href="/">Blog
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -24,13 +24,17 @@
                 <li><a href="/admin"> Admin panel </a></li>
               {{/if}}
             </ul>
-          </li>
-          <!--<li><a href="/addpost"> Add post </a></li>
-          <li><a href="/showposts"> Show posts </a></li>-->
+          </li>-->
+          <li><a href="/addpost"> Add post </a></li>
+          <li><a href="/showposts"> Show posts </a></li>
+          {{#if isInRole 'admin'}}
+            <li><a href="/admin"> Admin panel </a></li>
+          {{/if}}
+          <li><a href="/showposts"> {{> loginButtons}} </a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <!--<ul class="nav navbar-nav navbar-right">
           {{> loginButtons}}
-        </ul>
+        </ul>-->
       </div>
     </div>
   </nav>

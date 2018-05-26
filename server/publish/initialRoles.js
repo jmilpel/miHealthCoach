@@ -1,5 +1,7 @@
+import { Meteor } from 'meteor/meteor';
+
 Meteor.startup(function () {
-	if(Meteor.users.find() < 1){
+	if(Meteor.users.find().count() < 1){
 		var id = Accounts.createUser({
 			email: 'admin@admin.com',
 			password: 'asdfasdf',
@@ -7,5 +9,6 @@ Meteor.startup(function () {
 		});
 				
 		Roles.addUsersToRoles(id,'admin');
+		console.log('Administrator creado');
 	}
 });
