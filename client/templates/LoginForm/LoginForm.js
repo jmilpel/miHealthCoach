@@ -5,8 +5,13 @@ Template.AddPost.events({
 		var username = event.target.username.value;
 		var password = event.target.password.value;
 
-		Meteor.loginWithPassword(username, password, function(){
-    		console.log("You initiated the login process.");
+		Meteor.loginWithPassword(username, password, function(error){
+			if(!error){
+				console.log("You initiated the login process.");	
+			}
+    		else{
+    			console.log(error);
+    		}
 		})
 	}
 });

@@ -1,11 +1,12 @@
 <template name="AdminPosts">
 	<div class="col-xs-12">
-		<table>
+		<table id="postsAdminTable">
 			<thead>
 				<tr class="row">
 					<th>Título</th>
-					<th>Accion</th>
 					<th>Mensaje</th>
+					<th>Eliminar</th>
+					<th>Editar</th>
 				</tr>
 			</thead>
 
@@ -13,11 +14,14 @@
 				{{#each posts}}
 					<tr class="row">
 						<td>{{Title}}</td>
-						<td><button class="btn btn-danger" id="deletePost">Eliminar</button><button class="btn btn-warning" id="editPost">Editar</button></td>
 						<td>{{Message}}</td>
+						<td><button class="btn btn-danger" id="deletePost"><span class="glyphicon glyphicon-remove"></span>
+							<!--<span class="glyphicon glyphicon-remove-circle"></span>--></button></td>
+						<td><button class="btn btn-warning" id="editPost"><span class="glyphicon glyphicon-edit"></span></button></td>
+
 					</tr>
 				{{/each}}
 			</tbody>
 		</table>
 	</div>
-</template>
+</template> 

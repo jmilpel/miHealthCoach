@@ -7,7 +7,7 @@ Meteor.startup(function () {
 			password: 'asdfasdf',
 			profile: {name: 'Administrator'}
 		});
-				
+
 		Roles.addUsersToRoles(id,'admin');
 		console.log('Administrator creado');
 	}

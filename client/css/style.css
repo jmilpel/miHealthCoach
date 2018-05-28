@@ -1,1 +1,27 @@
 /* CSS declarations go here */
+
+.navbar{
+	background-color: #c9e8d1;
+	height: 80px;
+	border-bottom: 10px black;
+	vertical-align: center;
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+
+#postsAdminTable tr, td{
+	padding: 5px 10px 5px 10px;
+}
+
+#postsAdminTable thead{
+	background: #76a2a2;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+}
+
+#postsAdminTable tbody{
+	background: #d1e0e0;
+}
