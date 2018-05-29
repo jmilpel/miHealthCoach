@@ -7,7 +7,7 @@ Template.LoginForm.events({
 
 		Meteor.loginWithPassword(username, password, function(error){
 			if(!error){
-				console.log("You initiated the login process.");	
+				console.log("You initiated the login process.");
 			}
     		else{
     			console.log(error);

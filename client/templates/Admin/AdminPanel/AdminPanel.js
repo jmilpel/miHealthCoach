@@ -1,6 +1,5 @@
 Template.ShowPosts.helpers({
 	numPost: function () {
-		var num = Posts.find().count();
-		return num;
+		return Meteor.call('numPost');
 	}
 });
