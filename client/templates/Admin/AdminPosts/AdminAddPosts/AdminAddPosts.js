@@ -1,21 +1,21 @@
-Template.EditPosts.events({
-	'submit #editPost': function () {
+Template.AdminAddPosts.events({
+	'submit #addPost': function () {
 		event.preventDefault();
 
 		var title = event.target.postTitle.value;
 		var message = event.target.postMessage.value;
 		var postBody = $('#summernote').summernote('code');
 
-		Meteor.call('editPost', this._id, title, message, postBody, function(error){
+		console.log();
+		Meteor.call('addPost', title, message, postBody, function(error){
 			if(!error){
-				Router.go('/admin/posts');
-			}
+				Router.go('/showposts');	
+			}	
 		});
 	}
 });
 
-
-Template.EditPosts.onRendered(function(){
+Template.AdminAddPosts.onRendered(function(){
 	$(document).ready(function() {
   		$('#summernote').summernote();
 	});

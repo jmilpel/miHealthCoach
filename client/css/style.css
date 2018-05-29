@@ -25,3 +25,7 @@
 #postsAdminTable tbody{
 	background: #d1e0e0;
 }
+
+.adminbar li{
+	display: inline-block;
+}

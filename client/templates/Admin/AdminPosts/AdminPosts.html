@@ -1,12 +1,18 @@
 <template name="AdminPosts">
+
+	<!--Panel administrador-->
+	{{> AdminPanelBar}}
+
 	<div class="col-xs-12">
 		<table id="postsAdminTable">
 			<thead>
 				<tr class="row">
 					<th>Título</th>
 					<th>Mensaje</th>
-					<th>Eliminar</th>
-					<th>Editar</th>
+					<th>Contenido</th>
+					<th>Fecha</th>
+					<th> </th>
+					<th> </th>
 				</tr>
 			</thead>
 
@@ -15,7 +21,9 @@
 					<tr class="row">
 						<td>{{Title}}</td>
 						<td>{{Message}}</td>
-						<td><button class="btn btn-danger" id="deletePost"><span class="glyphicon glyphicon-remove"></span>
+						<td>{{{Body}}}</td>
+						<td>{{CreatedAt}}</td>
+						<td><button class="btn btn-danger" id="deletePost"><span class="glyphicon glyphicon-trash"></span>
 							<!--<span class="glyphicon glyphicon-remove-circle"></span>--></button></td>
 						<td><button class="btn btn-warning" id="editPost"><span class="glyphicon glyphicon-edit"></span></button></td>
 

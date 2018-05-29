@@ -1,4 +1,8 @@
-<template name="AddPost">
+<template name="AdminAddPosts">
+
+	<!--Panel administrador-->
+		{{> AdminPanelBar}}
+
 	<div class="col-xs-12">
 		<form role="form" id="addPost">
 			<div class="form-group">
@@ -9,6 +13,13 @@
 				<label for="postMessage">Mensaje del post:</label>
 				<textarea id="postMessage" name="postMessage" rows="5" class="form-control" placeholder="Escribe tu mensaje aquí"></textarea>
 			</div>
+
+			<div id="summernote" class="form-group">
+				<h1>Titulo de muestra...</h1>
+				<p>Texto de muestra...</p>
+				<p>Texto de muestra...</p>
+			</div>
+
 			<div class="form-group">
 				<button type="submit" class="form-control btn btn-success">Añadir post</button>
 			</div>
