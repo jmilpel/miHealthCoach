@@ -11,7 +11,7 @@
         <a class="navbar-brand" href="/"><img src="logo.png"><!--Brand or Logo--></a>
       </div>
 
-      <div class="collapse navbar-collapse" id="navbar-content">
+      <div class="collapse navbar-collapse navbuttons" id="navbar-content">
         <ul class="nav navbar-nav">
           <li class="active"><a href="/"> Home </a></li>
           <!--<li class="dropdown nav-item">
@@ -25,9 +25,9 @@
               {{/if}}
             </ul>
           </li>-->
-          <li><a href="/showposts"> Publicaciones </a></li>
+          <li><a href="/showposts"> Blog </a></li>
           {{#if isInRole 'admin'}}
-            <li><a href="/admin"> Panel administracion </a></li>
+            <li><a href="/admin"> Panel administración </a></li>
           {{/if}}
           {{#if currentUser}}
             <li><a href="/ucp"><span class="glyphicon glyphicon-cog"></span>&nbsp;Ajustes</a></li>
@@ -39,9 +39,11 @@
             <li><a href="/showposts"> {{> loginButtons}} </a></li>
           {{/if}}
         </ul>
-        <!--<ul class="nav navbar-nav navbar-right">
-          {{> loginButtons}}
-        </ul>-->
+        <ul class="nav navbar-nav navbar-right navsocial">
+          <strong>Síguenos: </strong>
+          <a href="https://www.facebook.com/healthcoachraquelsanmillan" target="_blank"><img src="facebook.svg" alt="facebook"></a>
+          <a href="https://instagram.com/healthcoachraquel/" target="_blank"><img src="instagram.svg" alt="instagram"></a>
+        </ul>
       </div>
     </div>
   </nav>
@@ -57,4 +59,3 @@
 
   </li>
 </template>
-

@@ -1,6 +1,18 @@
 <template name="Portada">
 	<div id="Portada" class="text-center portada">
-		<!--<img src="happy.jpg" alt="Health life">-->
-		<img src="portada.png" alt="Health life">
+		<div class="col-sm-12 col-md-10">
+			{{> IntroImg}}
+		</div>
+		<div class="col-sm-12 col-md-2">
+			{{> Programs}}
+		</div>
 	</div>
 </template>
+
+
+<template name="IntroImg">
+	<div class="IntroImg">
+		<img src="happy.jpg" alt="Health life">
+	</div>
+</template>
+
