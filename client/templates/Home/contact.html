@@ -1,11 +1,38 @@
 <template name="Contact">
+<div class="container">
 	<div id="contactHeader" class="col-xs-12 section">
-		<h1>Contacta con nosotros</h1>
-		<h4>Completando tus datos de contacto, obtendrás una valoración nutricional al 50% dto</h4>
+		<h1 class="text-center">Contacta con nosotros</h1>
+		<p class="text-center">Puedes obtener descuentos promocionales</p>
 		<hr class="init">
 	</div>
-	<div class="col-xs-12">
-		<!--{{> contactForm}}-->
+	<div class="container">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">	
+			<form id="contactForm" class="form-horizontal" method="post">
+				<div class="form-group">
+					<!--<label for="name">Usuario:</label>-->
+					<input type="text" name="contactName" id="contactName" class="form-control" placeholder="* Nombre y apellidos..." required>
+				</div>
+				<div class="form-group">
+					<!--<label for="email">Email:</label>-->
+					<input type="email" name="contactEmail" id="contactEmail" class="form-control" placeholder="* Email..." required>
+				</div>
+				<div class="form-group">
+					<!--<label for="phone">Teléfono:</label>-->
+					<input type="tel" name="contactPhone" id="contactPhone" class="form-control" placeholder="* Teléfono..." required>
+				</div>
+				<div class="form-group">
+					<!--<label for="city">Población:</label>-->
+					<input type="text" name="contactCity" id="contactCity" class="form-control" placeholder="* Población..." required>
+				</div>
+				<div class="form-group">
+					<!--<label for="message">Consulta:</label>-->
+					<textarea name="contactMessage" id="contactMessage" class="form-control" placeholder="* Dudas y consultas..." required></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="form-control btn btn-success">Enviar consulta</button>
+				</div>
+			</form>
+		</div>
 	</div>
-	<br><br>
+</div>
 </template>

@@ -29,3 +29,5 @@ mongo
 summernote:summernote
 fortawesome:fontawesome
 dburles:google-maps
+aldeed:simple-schema
+email

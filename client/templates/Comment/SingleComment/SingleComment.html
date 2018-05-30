@@ -1,12 +1,14 @@
 <template name="SingleComment">
-	<div class="col-xs-11">
-		<li class="list-unstyled" style="border-top: 1px solid #000; font-style: italic;"><h6> Enviado por {{Author}} el {{CreatedAt}} </h6></li>
-		<li class="list-unstyled"> {{Message}} </li>
-	</div>
-	<div class="col-xs-1">
-		{{#if commentDeleteRight}}
-			<!--<li class="btn btn-danger">Eliminar comentario</li>-->
-			<button class="btn btn-danger" id="deleteComment"><span class="glyphicon glyphicon-trash"></span></button>
-		{{/if}}
+	<div class="container">
+		<div class="col-xs-11">
+			<li class="list-unstyled" style="border-top: 1px solid #000; font-style: italic;"><h6> Enviado por {{Author}} el {{CreatedAt}} </h6></li>
+			<li class="list-unstyled"> {{Message}} </li>
+		</div>
+		<div class="col-xs-1">
+			{{#if commentDeleteRight}}
+				<!--<li class="btn btn-danger">Eliminar comentario</li>-->
+				<button class="btn btn-danger" id="deleteComment"><span class="glyphicon glyphicon-trash"></span></button>
+			{{/if}}
+		</div>
 	</div>
 </template>

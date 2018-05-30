@@ -1,22 +1,24 @@
 <template name="EditPosts">
-	<div class="col-xs-12">
-		<form role="form" id="editPost">
-			<div class="form-group">
-				<label for="postTitle">Titulo del post:</label>
-				<input type="text" value={{Title}} name="postTitle" id="postTitle" class="form-control" placeholder="Escribe el título del post aquí">
-			</div>
-			<div class="form-group">
-				<label for="postMessage">Mensaje del post:</label>
-				<textarea id="postMessage" value={{Message}} name="postMessage" rows="5" class="form-control" placeholder="Escribe tu mensaje aquí"></textarea>
-			</div>
+	<div class="container">
+		<div class="col-xs-12">
+			<form role="form" id="editPost">
+				<div class="form-group">
+					<label for="postTitle">Titulo del post:</label>
+					<input type="text" value={{Title}} name="postTitle" id="postTitle" class="form-control" placeholder="Escribe el título del post aquí">
+				</div>
+				<div class="form-group">
+					<label for="postMessage">Mensaje del post:</label>
+					<textarea id="postMessage" value={{Message}} name="postMessage" rows="5" class="form-control" placeholder="Escribe tu mensaje aquí"></textarea>
+				</div>
 
-			<div id="summernote" class="form-group">
-				{{{Body}}}
-			</div>
+				<div id="summernote" class="form-group">
+					{{{Body}}}
+				</div>
 
-			<div class="form-group">
-				<button type="submit" class="form-control btn btn-success">Editar post</button>
-			</div>
-		</form>
+				<div class="form-group">
+					<button type="submit" class="form-control btn btn-success">Editar post</button>
+				</div>
+			</form>
+		</div>
 	</div>
 </template>

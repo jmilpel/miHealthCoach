@@ -1,16 +1,31 @@
-<template name="AdminUsers">
-	<div class="col-xs-12">
-		
+ <template name="AdminUsers">
+	<div class="container">
 		<!--Panel administrador-->
 		{{> AdminPanelBar}}
 
-		<!--Panel administrador-->
 		<div class="col-xs-12">
-			<h2 class="text-center text-capitalize">Some Overview about the Blog</h2>
-			<p class="text-center">Número de publicaciones <strong>XXX</strong></p>
-			<p class="text-center">Número de usuarios registrados <strong>XXX</strong></p>
-			<p class="text-center">Número de páginas visitadas <strong>XXX</strong></p>
-		</div>
+			<table class="table table-hover table-bordered" id="usersAdminTable">
+				<thead>
+					<tr class="row">
+						<th>Usuario</th>
+						<th>Email</th>
+					</tr>
+				</thead>
 
+				<tbody>
+					{{#each users}}
+						<tr class="row">
+							<td>{{username}}</td>
+							<td>{{email}}</td>
+							<td>{{{Body}}}</td>
+							<td>{{CreatedAt}}</td>
+							<td><button class="btn btn-danger" id="deletePost"><span class="glyphicon glyphicon-trash"></span>
+								<!--<span class="glyphicon glyphicon-remove-circle"></span>--></button></td>
+							<td><button class="btn btn-warning" id="editPost"><span class="glyphicon glyphicon-edit"></span></button></td>
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
 	</div>
-</template>
+</template> 

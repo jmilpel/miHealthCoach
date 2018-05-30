@@ -1,33 +1,33 @@
 /* CSS declarations go here */
 
+
+
+/*Styles for all the web*/
 .bodypage { 
 	padding-top: 80px;
+	width: 100%;
+	align-content: center;
 }
 
-.section{
+/*.section{
 	align-content: center;
 	padding: 0% 2% 0% 2%;
+}*/
+
+.section {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
-.section h1{
-	margin-top: 10px;
-	text-align: center;
-}
-
-.section h4{
-	text-align: center;
-}
-
+/********************
+** Navbar template **
+********************/
 .navbar{
 	/*background-color: #c9e8d1;*/
 	height: 80px;
 	border-bottom: 10px black;
 	vertical-align: center;
-}
-
-.navbar-brand img {
-    height: 60px;
-    width: auto;
+	position: absolute;
 }
 
 .navbuttons, .navsocial{
@@ -40,23 +40,52 @@
 	width: 25px;
 }
 
-#postsAdminTable tr, td{
-	padding: 5px 10px 5px 10px;
+
+/********************
+** Footer template **
+*********************/
+
+footer{
+	/*background-color: #70a970;*/
+	background-color: #c9e8d1;
+	position: absolute;
+	width: 100%;
+	color: #000/*#d1d1e0;
+	/*bottom: 0;*/
 }
 
-#postsAdminTable thead{
-	background: #76a2a2;
-	padding: 5px 10px 5px 10px;
-	text-align: center;
+.map-container {
+  /*width: 100%;*/
+  max-width: 100%;
+  height: 200px;
+  /*border: solid 2px black;*/
+  margin-top: 10px;
+  padding-left: 5px;
 }
 
-#postsAdminTable tbody{
-	background: #d1e0e0;
+.address{
+	margin-top: 20px;
 }
 
-.adminbar li{
-	display: inline-block;
+.copyright{
+	margin-top: 10px;
+	padding-top: 6px;
+	color: #FFF;
+	background-color: #132013;
 }
+
+
+/*******************
+** Cover template **
+*******************/
+
+.IntroImg img{
+	width: 100%;
+}
+
+/**********************
+** Programs template **
+**********************/
 
 .service{
 	align-items: center;
@@ -68,17 +97,22 @@
 	margin: 5px;*/
 }
 
-/*.service-img{
-	width: 128px;
-	height: 128px;
-	/*border: 3px solid MediumSeaGreen;
-}*/
+.service-img{
+	width: 64px;
+	height: 64px;
+	/*border: 3px solid MediumSeaGreen;*/
+}
 
 .service h4{
 	color: #F9C004;
 	text-align: center;
 }
 
+
+
+/*******************
+** Plans template **
+*******************/
 
 .plans{
 	background-color: #c9e8d1;
@@ -103,48 +137,32 @@
 
 .plan img:hover{filter: alpha(opacity=50); moz-opacity:.50; opacity:.50;}
 
+.modal-header{background: #97cc8a;}
+.modal-footer{background: #97cc8a;}
+.modal-footer p{text-align: center;}
 
-.modal-header{
-	background: #97cc8a;
+
+
+/**************
+** Blog part **
+**************/
+#postsAdminTable tr, td{
+	padding: 5px 10px 5px 10px;
 }
 
-.modal-footer{
-	background: #97cc8a;
-}
-.modal-footer p{
-	text-align: center;
-}
-
-.IntroImg img{
-	width: 100%;
+#postsAdminTable thead{
+	/*background: #76a2a2;
+	padding: 5px 10px 5px 10px;
+	text-align: center;*/
 }
 
-
-footer{
-	/*background-color: #70a970;*/
-	background-color: #092a1a;
-	position: absolute;
-	width: 100%;
-	color: #fff;
-	/*bottom: 0;*/
+#postsAdminTable tbody{
+	/*background: #d1e0e0;
+	/*border: 2px;
+	border-style: outset;*/
 }
 
-.map-container {
-  /*width: 100%;*/
-  max-width: 100%;
-  height: 200px;
-  /*border: solid 2px black;*/
-  margin-top: 10px;
-  padding-left: 5px;
-}
-
-.address{
-	margin-top: 20px;
-}
-
-.copyright{
-	margin-top: 10px;
-	padding-top: 6px;
-	color: #FFF;
-	background-color: #132013;
+.adminbar li{
+	display: inline-block;
+	padding-top: 10px;
 }
