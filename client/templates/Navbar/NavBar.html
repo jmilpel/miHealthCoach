@@ -20,7 +20,7 @@
           {{/if}}
           {{#if currentUser}}
             <li><a href="/ucp"><span class="glyphicon glyphicon-cog"></span>&nbsp;Ajustes</a></li>
-            <li><a href="/" id="logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout: <strong>{{username}}</strong></a></li>
+            <li><a href="/" id="logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout: <u><strong>{{username}}</strong></u></a></li>
           {{else}}
             {{> loginDropDown}}
           {{/if}}
