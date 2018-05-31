@@ -30,14 +30,9 @@
 	position: absolute;
 }
 
-.navbuttons, .navsocial{
+.navbuttons{
 	display: inline-block;
-	padding: 18px;
-}
-
-.navsocial img{
-	height: 25px;
-	width: 25px;
+	padding: 15px;
 }
 
 
@@ -46,13 +41,22 @@
 *********************/
 
 footer{
-	/*background-color: #70a970;*/
 	background-color: #c9e8d1;
 	position: absolute;
 	width: 100%;
-	color: #000/*#d1d1e0;
-	/*bottom: 0;*/
+	color: #000;
 }
+/*
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #c9e8d1;
+  text-align: center;
+}*/
+
 
 .map-container {
   /*width: 100%;*/
@@ -164,5 +168,5 @@ footer{
 
 .adminbar li{
 	display: inline-block;
-	padding-top: 10px;
+	margin-top: 20px;
 }

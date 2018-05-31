@@ -11,8 +11,8 @@
         <a class="navbar-brand" href="/"><img src="logo.png" height="60"><!--Brand or Logo--></a>
       </div>
 
-      <div class="collapse navbar-collapse navbuttons" id="navbar-content">
-        <ul class="nav navbar-nav">
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="nav navbar-nav" style="display: inline-block; padding: 15px;">
           <li class="active"><a href="/"> Home </a></li>
           <li><a href="/showposts"> Blog </a></li>
           {{#if isInRole 'admin'}}
@@ -20,18 +20,15 @@
           {{/if}}
           {{#if currentUser}}
             <li><a href="/ucp"><span class="glyphicon glyphicon-cog"></span>&nbsp;Ajustes</a></li>
-            <li><a href="/" id="logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a></li>
+            <li><a href="/" id="logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout: <strong>{{username}}</strong></a></li>
           {{else}}
             {{> loginDropDown}}
           {{/if}}
-          {{#if currentUser}}
-            <li><a href="/showposts"> {{> loginButtons}} </a></li>
-          {{/if}}
         </ul>
-        <ul class="nav navbar-nav navbar-right navsocial">
+        <ul class="nav navbar-nav navbar-right" style="display: inline-block; padding: 15px;">
           <strong>Síguenos: </strong>
-          <a href="https://www.facebook.com/healthcoachraquelsanmillan" target="_blank"><img src="facebook.svg" alt="facebook"></a>
-          <a href="https://instagram.com/healthcoachraquel/" target="_blank"><img src="instagram.svg" alt="instagram"></a>
+          <a href="https://www.facebook.com/healthcoachraquelsanmillan" target="_blank"><img src="facebook.svg" alt="facebook" width="25px" height="25px"></a>
+          <a href="https://instagram.com/healthcoachraquel/" target="_blank"><img src="instagram.svg" alt="instagram" width="25px" height="25px"></a>
         </ul>
       </div>
     </div>
@@ -40,11 +37,13 @@
 
 
 <template name="loginDropDown">
+  <li><a href="/loginForm"><span class="glyphicon glyphicon-log-in"></span><span class="caret"></span>&nbsp;Login / Registro </a></li>
+  <!--
   <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="glyphicon glyphicon-log-in"></span><span class="caret"></span>&nbsp;Login </a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="glyphicon glyphicon-log-in"></span><span class="caret"></span>&nbsp;Login / Registro </a>
     <ul class="dropdown-menu list-group">
       <li class="list-group-item" style="border-color: transparent;">{{>LoginForm}}</li>
     </ul>
 
-  </li>
+  </li>-->
 </template>

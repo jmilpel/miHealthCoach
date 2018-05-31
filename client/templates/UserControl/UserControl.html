@@ -1,20 +1,20 @@
 <template name="UserControl">
 	<div class="container">
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-md-6 col-md-offset-3">
 			<h1 class="text-center">Ajustes de usuario</h1>
 			<p class="text-center">Cambia tu contraseña</p>
 
 			<form class="form-horizontal" id="changePassword">
 				<div class="form-group">
-					<label for="oldPassword">Contraseña actual:</label>
-					<input type="password" name="oldPassword" id="oldPassword" class="form-control" placeholder="Contraseña">
+					<label for="oldPassword" class="text-center">Contraseña actual</label>
+					<input type="password" name="oldPassword" id="oldPassword" class="form-control" placeholder="Contraseña actual">
 				</div>
 				<div class="form-group">
-					<label for="newPassword">Contraseña nueva:</label>
-					<input type="password" name="newPassword" id="newPassword" class="form-control" placeholder="Contraseña">
+					<label for="newPassword" class="text-center">Contraseña nueva</label>
+					<input type="password" name="newPassword" id="newPassword" class="form-control" placeholder="Contraseña nueva">
 				</div>			
 				<div class="form-group">
-					<button type="submit" class="form-control btn btn-success">Cambiar</button>
+					<button type="submit" class="form-control btn btn-success">Cambiar contraseña</button>
 				</div>
 			</form>
 		</div>
