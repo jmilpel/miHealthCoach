@@ -18,9 +18,9 @@
 				<tbody>
 					{{#each users}}
 						<tr class="row">
-							<td>{{username}}</td>
-							<td>{{email}}</td>
-							<td>{{CreatedAt}}</td>
+							<td>{{profile.name}}</td>
+							<td>{{emails.address}}</td>
+							<td>{{createdAt}}</td>
 							<td><button class="btn btn-danger" id="deletePost"><span class="glyphicon glyphicon-trash"></span>
 								<!--<span class="glyphicon glyphicon-remove-circle"></span>--></button></td>
 							<td><button class="btn btn-warning" id="editPost"><span class="glyphicon glyphicon-edit"></span></button></td>

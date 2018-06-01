@@ -6,6 +6,7 @@ import { Email } from 'meteor/email'
 
 Meteor.subscribe('allPosts');
 Meteor.subscribe('comments');
-Meteor.subscribe('allusers');
+Meteor.subscribe('users');
+Meteor.subscribe('usersCount');
 
 GoogleMaps.load();
