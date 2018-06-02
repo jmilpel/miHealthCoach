@@ -4,13 +4,12 @@
 		{{> AdminPanelBar}}
 
 		<div class="col-xs-12">
-			<table class="table table-hover table-bordered" id="usersAdminTable">
-				<thead>
+			<table class="table table-hover" id="usersAdminTable">
+				<thead class="thead-dark" style="background-color: #00b386;">
 					<tr class="row">
 						<th>Usuario</th>
 						<th>Email</th>
 						<th>Creado el</th>
-						<th></th>
 						<th></th>
 					</tr>
 				</thead>
@@ -19,15 +18,13 @@
 					{{#each users}}
 						<tr class="row">
 							<td>{{profile.name}}</td>
-							<td>{{emails.address}}</td>
+							<td>{{emails.[0].address}}</td>
 							<td>{{createdAt}}</td>
-							<td><button class="btn btn-danger" id="deletePost"><span class="glyphicon glyphicon-trash"></span>
-								<!--<span class="glyphicon glyphicon-remove-circle"></span>--></button></td>
-							<td><button class="btn btn-warning" id="editPost"><span class="glyphicon glyphicon-edit"></span></button></td>
+							<td><button class="btn btn-danger" id="deleteUser"><span class="glyphicon glyphicon-trash"></span></button></td>
 						</tr>
 					{{/each}}
 				</tbody>
 			</table>
 		</div>
 	</div>
-</template> 
+</template>

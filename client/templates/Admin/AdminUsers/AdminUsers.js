@@ -5,10 +5,7 @@ Template.AdminUsers.helpers({
 });
 
 Template.AdminUsers.events({
-	'click #deletePost': function () {
+	'click #deleteUser': function () {
 		Meteor.call('deleteUser',this._id);
-	},
-	'click #editPost': function () {
-		Router.go('/admin/posts/'+this._id);
 	}
 });

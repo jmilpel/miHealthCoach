@@ -1,6 +1,10 @@
 /* CSS declarations go here */
 
 
+body{
+	font: 14px Montserrat, sans-serif;
+}
+
 
 /*Styles for all the web*/
 .bodypage { 
@@ -85,6 +89,21 @@ footer{
 
 .IntroImg img{
 	width: 100%;
+	position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.coverText{
+	position: absolute;
+	display: block;
+  	position: absolute;
+  	bottom: 40px;
+  	font: 35px Montserrat, sans-serif;
+  	width: 100%;
+	color: #fff;
+	text-shadow: 2px 1px #ccccff;
+	/*background-color: rgba(255,255,255,.8);*/
 }
 
 /**********************

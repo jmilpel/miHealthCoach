@@ -13,8 +13,11 @@ Template.LoginForm.events({
     			console.log(error);
     		}
 		})
-	},
+	}
+});
 
+
+Template.RegisterForm.events({
 	'submit #registerForm': function () {
 		event.preventDefault();
 
@@ -22,10 +25,11 @@ Template.LoginForm.events({
 		var email = event.target.RegisterEmail.value;
 		var password = event.target.RegisterPassword.value;
 
-		Accounts.createUser({
+		var id = Accounts.createUser({
 			email:email,
 			password:password,
 			profile: {name:username}
 		});
+		console.log('New user created');
 	}
 });

@@ -7,7 +7,7 @@ Template.UserControl.events({
 
 		Accounts.changePassword(oldPw, newPw, function(err){
 			if(!err){
-				alert('¿Contraseña modificada!');
+				alert('¡Contraseña modificada!');
 			}
 
 		});
